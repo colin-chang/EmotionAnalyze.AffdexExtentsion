@@ -6,6 +6,15 @@ The AutoCameraDetector can access a webcam connected to the device to capture fr
 
 The unit test project `ColinChang.EmotionAnalyze.Test` shows you how to use it.Check it to have a quick start.
 
+**[Nuget](https://www.nuget.org/packages/ColinChang.EmotionAnalyze.AffdexExtentsion/)**
+```sh
+# Package Manager
+Install-Package ColinChang.EmotionAnalyze.AffdexExtentsion
+
+# .NET CLI
+dotnet add package ColinChang.EmotionAnalyze.AffdexExtentsion
+```
+
 >Requirements
 
 **Runtime Requirements**
