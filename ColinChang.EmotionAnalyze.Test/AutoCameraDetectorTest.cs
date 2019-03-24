@@ -55,7 +55,7 @@ namespace ColinChang.EmotionAnalyze.Test
             Console.WriteLine(JsonConvert.SerializeObject(result));
         }
 
-        private static void Detector_OnProcessingException(object sender, ProcessingExceptionEventArgs e)
+        private void Detector_OnProcessingException(object sender, ProcessingExceptionEventArgs e)
         {
             Console.WriteLine($"An exception occured when process on camera {e.CameraId}:{e.Exception.Message}");
         }
