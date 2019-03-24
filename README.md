@@ -43,6 +43,6 @@ http://affectiva.github.io/developerportal/pages/platforms/v3_4_1/windows/classd
 # generate nuspec file
 nuget spec
 
-# pack 2 nupkg file
+# pack to nupkg file
 nuget pack ColinChang.EmotionAnalyze.AffdexExtentsion.csproj
 ```
