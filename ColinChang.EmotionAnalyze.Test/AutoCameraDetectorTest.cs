@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading;
 using ColinChang.EmotionAnalyze.AffdexExtentsion;
-using ColinChang.EmotionAnalyze.AffdexExtentsion.Model;
+using ColinChang.EmotionAnalyze.Model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 
@@ -42,17 +42,7 @@ namespace ColinChang.EmotionAnalyze.Test
 
         private void Detector_OnImageResults(object sender, ImageResultsEventArgs e)
         {
-            var frame = e.Frame;
-            var faces = e.Faces;
-
-            if (!faces.Any())
-                return;
-
-            var result = new ImageResult(e.CameraId, frame.getWidth(), frame.getHeight(),
-                frame.getTimestamp(),
-                faces.ToLocalFaces());
-
-            Console.WriteLine(JsonConvert.SerializeObject(result));
+            Console.WriteLine(JsonConvert.SerializeObject(e.ImageResult));
         }
 
         private void Detector_OnProcessingException(object sender, ProcessingExceptionEventArgs e)
