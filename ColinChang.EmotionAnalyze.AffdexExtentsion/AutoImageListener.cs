@@ -10,7 +10,7 @@ namespace ColinChang.EmotionAnalyze.AffdexExtentsion
 {
     class AutoImageListener : ImageListener
     {
-        private int _cameraId;
+        private readonly int _cameraId;
         private event EventHandler<ImageCaptureEventArgs> OnImageCapture;
         private event EventHandler<ImageResultsEventArgs> OnImageResults;
 
@@ -51,13 +51,11 @@ namespace ColinChang.EmotionAnalyze.AffdexExtentsion
         }
     }
 
-    public class ImageResultsEventArgs : ImageCaptureEventArgs
+    public class ImageResultsEventArgs
     {
-        public Dictionary<int, Face> Faces { get; set; }
+        public Model.ImageResult ImageResult { get; set; }
 
-        public ImageResultsEventArgs(int cameraId, Dictionary<int, Face> faces, Frame frame) : base(cameraId, frame)
-        {
-            Faces = faces;
-        }
+        public ImageResultsEventArgs(int cameraId, Dictionary<int, Face> faces, Frame frame) =>
+            this.ImageResult = new Model.ImageResult(cameraId, frame.getWidth(), frame.getHeight(), frame.getTimestamp(), faces.ToLocalFaces());
     }
 }
