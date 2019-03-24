@@ -34,7 +34,8 @@
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>affdex.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Affdex, Version=4.0.0.615, Culture=neutral, processorArchitecture=AMD64">
@@ -43,6 +44,9 @@
     </Reference>
     <Reference Include="AutoMapper, Version=8.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.8.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ColinChang.EmotionAnalyze.Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ColinChang.EmotionAnalyze.Models.1.0.0\lib\netstandard2.0\ColinChang.EmotionAnalyze.Models.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -65,21 +69,6 @@
     <Compile Include="AutoImageListener.cs" />
     <Compile Include="AutoProcessStatusListener.cs" />
     <Compile Include="FaceMapper.cs" />
-    <Compile Include="Models\Age.cs" />
-    <Compile Include="Models\Appearance.cs" />
-    <Compile Include="Models\Emoji.cs" />
-    <Compile Include="Models\Emojis.cs" />
-    <Compile Include="Models\Emotions.cs" />
-    <Compile Include="Models\Ethnicity.cs" />
-    <Compile Include="Models\Expressions.cs" />
-    <Compile Include="Models\Face.cs" />
-    <Compile Include="Models\FaceQuality.cs" />
-    <Compile Include="Models\FeaturePoint.cs" />
-    <Compile Include="Models\Gender.cs" />
-    <Compile Include="Models\Glasses.cs" />
-    <Compile Include="Models\ImageResult.cs" />
-    <Compile Include="Models\Measurements.cs" />
-    <Compile Include="Models\Orientation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -87,8 +76,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Affdex.dll" />
-    <Content Include="affdex.ico" />
-    <Content Include="bitbug_favicon.ico" />
     <Content Include="tensorflow.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
