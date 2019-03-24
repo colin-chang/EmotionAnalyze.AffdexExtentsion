@@ -15,16 +15,17 @@ Install-Package ColinChang.EmotionAnalyze.AffdexExtentsion
 dotnet add package ColinChang.EmotionAnalyze.AffdexExtentsion
 ```
 
+* Add reference of the `Affdex.dll` to your project. 
+* Set `affdex-native.dll`,`tensorflow.dll` Copy to Output Directory be "Always Copy"
+
 >Requirements
 
 **Runtime Requirements**
 
 * Microsoft .NET framework v 4.6.1 or newer
 * Visual C++ Redistributable runtime for VS 2015
-* [Affectiva SKD](https://knowledge.affectiva.com/docs/getting-started-with-the-emotion-sdk-for-windows#section-1-download-and-run-the-sdk-installer)
+* [Affectiva SKD](https://knowledge.affectiva.com/docs/getting-started-with-the-emotion-sdk-for-windows#section-1-download-and-run-the-sdk-installer) installed
 * Only x64 OS was supported. 
-* Add the Affdex assembly to your project.It's under your SDK directory by default.Use the release version dll.
-* copy `affdex-native.dll`,`tensorflow.dll` to your execute directory
 
 **Hardware requirements (recommended)**
 * Processor, 2 GHz
