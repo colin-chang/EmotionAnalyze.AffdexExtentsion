@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>affdex.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Affdex, Version=4.0.0.615, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -62,21 +65,33 @@
     <Compile Include="AutoImageListener.cs" />
     <Compile Include="AutoProcessStatusListener.cs" />
     <Compile Include="FaceMapper.cs" />
+    <Compile Include="Models\Age.cs" />
+    <Compile Include="Models\Appearance.cs" />
+    <Compile Include="Models\Emoji.cs" />
+    <Compile Include="Models\Emojis.cs" />
+    <Compile Include="Models\Emotions.cs" />
+    <Compile Include="Models\Ethnicity.cs" />
+    <Compile Include="Models\Expressions.cs" />
+    <Compile Include="Models\Face.cs" />
+    <Compile Include="Models\FaceQuality.cs" />
+    <Compile Include="Models\FeaturePoint.cs" />
+    <Compile Include="Models\Gender.cs" />
+    <Compile Include="Models\Glasses.cs" />
+    <Compile Include="Models\ImageResult.cs" />
+    <Compile Include="Models\Measurements.cs" />
+    <Compile Include="Models\Orientation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="affdex-native.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Affdex.dll" />
+    <Content Include="affdex.ico" />
+    <Content Include="bitbug_favicon.ico" />
     <Content Include="tensorflow.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ColinChang.EmotionAnalyze.Model\ColinChang.EmotionAnalyze.Model.csproj">
-      <Project>{a8a87af0-1db3-43cb-969e-16ca7e7bd87a}</Project>
-      <Name>ColinChang.EmotionAnalyze.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

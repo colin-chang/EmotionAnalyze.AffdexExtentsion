@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
-using ColinChang.EmotionAnalyze.Model;
+using ColinChang.EmotionAnalyze.AffdexExtentsion.Model;
 
 namespace ColinChang.EmotionAnalyze.AffdexExtentsion
 {

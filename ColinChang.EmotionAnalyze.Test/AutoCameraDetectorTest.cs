@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading;
 using ColinChang.EmotionAnalyze.AffdexExtentsion;
-using ColinChang.EmotionAnalyze.Model;
+using ColinChang.EmotionAnalyze.AffdexExtentsion.Model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 

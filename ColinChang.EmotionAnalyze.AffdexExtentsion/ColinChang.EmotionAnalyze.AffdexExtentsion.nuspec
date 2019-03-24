@@ -2,14 +2,15 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>1.0.0.0</version>
+    <version>1.1.0.0</version>
     <title>$title$</title>
     <authors>Colin Chang</authors>
     <owners>Colin Chang</owners>
     <licenseUrl>https://raw.githubusercontent.com/colin-chang/EmotionAnalyze.AffdexExtentsion/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/colin-chang/EmotionAnalyze.AffdexExtentsion</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/colin-chang/EmotionAnalyze.AffdexExtentsion/master/ColinChang.EmotionAnalyze.AffdexExtentsion/affdex.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>an extension of Affectiva Emotion SDK for Windows.It will be much more easier to use Affectiva SDK with this extension.</description>
+    <description>An extension of Affectiva Emotion SDK for Windows.It will be much more easier to use Affectiva SDK with this extension.</description>
     <copyright>https://colin-chang.site/</copyright>
     <tags>Affectiva Extension Emotion EmotionAnalyze</tags>
   </metadata>
