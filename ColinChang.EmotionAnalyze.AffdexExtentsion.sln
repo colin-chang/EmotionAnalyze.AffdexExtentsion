@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.489
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.EmotionAnalyze.AffdexExtentsion", "ColinChang.EmotionAnalyze.AffdexExtentsion\ColinChang.EmotionAnalyze.AffdexExtentsion.csproj", "{3616C9AD-F900-4CA3-BBC6-9F494D960589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.EmotionAnalyze.Models", "ColinChang.EmotionAnalyze.Models\ColinChang.EmotionAnalyze.Models.csproj", "{9A014969-7365-4D25-9B68-DC8EF873BED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColinChang.EmotionAnalyze.Models", "ColinChang.EmotionAnalyze.Models\ColinChang.EmotionAnalyze.Models.csproj", "{9A014969-7365-4D25-9B68-DC8EF873BED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.EmotionAnalyze.Test", "ColinChang.EmotionAnalyze.Test\ColinChang.EmotionAnalyze.Test.csproj", "{EE3B9D57-1EDA-413E-BD0C-B6972F0C8F45}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.EmotionAnalyze.Sample", "ColinChang.EmotionAnalyze.Sample\ColinChang.EmotionAnalyze.Sample.csproj", "{3F64F69D-416A-4A71-A197-464B53C97948}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{9A014969-7365-4D25-9B68-DC8EF873BED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A014969-7365-4D25-9B68-DC8EF873BED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A014969-7365-4D25-9B68-DC8EF873BED4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE3B9D57-1EDA-413E-BD0C-B6972F0C8F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE3B9D57-1EDA-413E-BD0C-B6972F0C8F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE3B9D57-1EDA-413E-BD0C-B6972F0C8F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE3B9D57-1EDA-413E-BD0C-B6972F0C8F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F64F69D-416A-4A71-A197-464B53C97948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F64F69D-416A-4A71-A197-464B53C97948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F64F69D-416A-4A71-A197-464B53C97948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F64F69D-416A-4A71-A197-464B53C97948}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,10 +1,7 @@
 ﻿using Affdex;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace ColinChang.EmotionAnalyze.AffdexExtentsion
 {
@@ -35,7 +32,6 @@ namespace ColinChang.EmotionAnalyze.AffdexExtentsion
 
             foreach (var face in faces.Values)
                 face.Dispose();
-            faces = null;
 
             if (frame != null)
                 frame.Dispose();
@@ -44,10 +40,10 @@ namespace ColinChang.EmotionAnalyze.AffdexExtentsion
 
     public class ImageCaptureEventArgs : CameraDetectorEventArgs
     {
-        public Frame Frame { get; set; }
+        public Stream ImageData { get; set; }
         public ImageCaptureEventArgs(int cameraId, Frame frame) : base(cameraId)
         {
-            this.Frame = frame;
+            ImageData = frame.ToImageStream();
         }
     }
 
@@ -55,7 +51,16 @@ namespace ColinChang.EmotionAnalyze.AffdexExtentsion
     {
         public Model.ImageResult ImageResult { get; set; }
 
-        public ImageResultsEventArgs(int cameraId, Dictionary<int, Face> faces, Frame frame) =>
-            this.ImageResult = new Model.ImageResult(cameraId, frame.getWidth(), frame.getHeight(), frame.getTimestamp(), faces.ToLocalFaces());
+        /// <summary>
+        /// The Image Data as stream format,it's from the origin Frame
+        /// </summary>
+        public Stream ImageData { get; set; }
+
+        public ImageResultsEventArgs(int cameraId, Dictionary<int, Face> faces, Frame frame)
+        {
+            ImageResult = new Model.ImageResult(cameraId, frame.getWidth(), frame.getHeight(), frame.getTimestamp(), faces.ToLocalFaces());
+
+            ImageData = frame.ToImageStream();
+        }
     }
 }

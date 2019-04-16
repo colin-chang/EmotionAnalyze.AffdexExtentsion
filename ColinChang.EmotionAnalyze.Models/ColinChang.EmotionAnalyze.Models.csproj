@@ -9,11 +9,26 @@
     <RepositoryUrl>https://github.com/colin-chang/EmotionAnalyze.AffdexExtentsion/tree/master/ColinChang.EmotionAnalyze.Models</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>Affectiva Extension Emotion EmotionAnalyze</PackageTags>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/colin-chang/EmotionAnalyze.AffdexExtentsion/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <Version>1.1.0</Version>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReleaseNotes>1.Add a Tag property to save extra data
+2.Set platform as x64</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
