@@ -32,10 +32,6 @@ dotnet add package ColinChang.EmotionAnalyze.AffdexExtentsion
 * RAM, 1 GB
 * Disk Space (min) : 950 MB
 
-> Run the unit test under x64 mode
-
-![test x64](testx64.png)
-
 Here is the Affdex Windows (.NET) SDK Document
 http://affectiva.github.io/developerportal/pages/platforms/v3_4_1/windows/classdocs/Affdex/html/b8038333-b12e-8ea1-a2ce-74c8d611fa89.htm
 
