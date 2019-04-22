@@ -49,7 +49,7 @@ namespace ColinChang.EmotionAnalyze.AffdexExtentsion
 
     public class ImageResultsEventArgs
     {
-        public Model.ImageResult ImageResult { get; set; }
+        public Models.ImageResult ImageResult { get; set; }
 
         /// <summary>
         /// The Image Data as stream format,it's from the origin Frame
@@ -58,7 +58,7 @@ namespace ColinChang.EmotionAnalyze.AffdexExtentsion
 
         public ImageResultsEventArgs(int cameraId, Dictionary<int, Face> faces, Frame frame)
         {
-            ImageResult = new Model.ImageResult(cameraId, frame.getWidth(), frame.getHeight(), frame.getTimestamp(), faces.ToLocalFaces());
+            ImageResult = new Models.ImageResult(cameraId, frame.getWidth(), frame.getHeight(), frame.getTimestamp(), faces.ToLocalFaces());
 
             ImageData = frame.ToImageStream();
         }

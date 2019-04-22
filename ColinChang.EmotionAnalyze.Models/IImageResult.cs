@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using ColinChang.EmotionAnalyze.Model;
 
 namespace ColinChang.EmotionAnalyze.Models
 {

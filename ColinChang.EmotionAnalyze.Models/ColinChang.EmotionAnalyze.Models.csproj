@@ -10,10 +10,9 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>Affectiva Extension Emotion EmotionAnalyze</PackageTags>
     <PackageLicenseUrl></PackageLicenseUrl>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReleaseNotes>1.Add IImageResult interface
-2.Mofify the struct of ImageResult(face property)</PackageReleaseNotes>
+    <PackageReleaseNotes>unify the namespace</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

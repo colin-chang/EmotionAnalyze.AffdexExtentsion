@@ -45,11 +45,12 @@
     <Reference Include="AutoMapper, Version=8.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.8.0.0\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
-    <Reference Include="ColinChang.EmotionAnalyze.Models, Version=1.1.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\ColinChang.EmotionAnalyze.Models.1.1.0\lib\netstandard2.0\ColinChang.EmotionAnalyze.Models.dll</HintPath>
+    <Reference Include="ColinChang.EmotionAnalyze.Models, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\ColinChang.EmotionAnalyze.Models.1.2.1\lib\netstandard2.0\ColinChang.EmotionAnalyze.Models.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />

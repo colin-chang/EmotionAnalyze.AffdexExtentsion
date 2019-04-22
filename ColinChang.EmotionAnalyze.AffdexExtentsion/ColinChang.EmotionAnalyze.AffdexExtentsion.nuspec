@@ -11,7 +11,7 @@
     <iconUrl>https://raw.githubusercontent.com/colin-chang/EmotionAnalyze.AffdexExtentsion/master/affdex.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This is an extension of Affectiva Emotion SDK for Windows.It will be much more easier to use Affectiva SDK with this extension.</description>
-    <releaseNotes>Publish the image data as stream for every frame.</releaseNotes>
+    <releaseNotes>Mofify the struct of ImageResult(face property)</releaseNotes>
     <copyright>https://colin-chang.site</copyright>
     <tags>Affectiva Extension Emotion EmotionAnalyze</tags>
   </metadata>

@@ -1,4 +1,4 @@
-﻿namespace ColinChang.EmotionAnalyze.Model
+﻿namespace ColinChang.EmotionAnalyze.Models
 {
     public class Measurements
     {

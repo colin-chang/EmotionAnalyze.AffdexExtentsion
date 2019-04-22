@@ -1,9 +1,9 @@
-﻿using ColinChang.EmotionAnalyze.AffdexExtentsion;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Threading;
+using ColinChang.EmotionAnalyze.AffdexExtentsion;
 
 namespace ColinChang.EmotionAnalyze.Sample
 {
@@ -12,7 +12,7 @@ namespace ColinChang.EmotionAnalyze.Sample
         static void Main(string[] args)
         {
             const string classifierPath = @"C:\Program Files\Affectiva\AffdexSDK\data";
-            const int cameraId = 1;
+            const int cameraId = 0;
 
             var detector = new AutoCameraDetector(classifierPath, cameraId);
             detector.OnImageCapture += Detector_OnImageCapture;
