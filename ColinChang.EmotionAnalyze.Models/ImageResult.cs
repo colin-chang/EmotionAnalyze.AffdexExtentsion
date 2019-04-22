@@ -1,21 +1,24 @@
 ﻿using System.Collections.Generic;
+using ColinChang.EmotionAnalyze.Model;
 
-namespace ColinChang.EmotionAnalyze.Model
+namespace ColinChang.EmotionAnalyze.Models
 {
-    public class ImageResult
+    public class ImageResult : IImageResult
     {
         public int CameraId { get; set; }
         public int Width { get; set; }
         public int Height { get; set; }
         public float Timestamp { get; set; }
-        public IList<KeyValuePair<int, Face>> Faces { get; set; }
+
+        public IEnumerable<Face> Faces { get; set; }
+
         /// <summary>
         /// Storage anything extra
         /// </summary>
         public object Tag { get; set; }
 
         public ImageResult(int cameraId, int width, int height, float timestamp,
-            IList<KeyValuePair<int, Face>> faces, object tag = null)
+            IEnumerable<Face> faces, object tag = null)
         {
             CameraId = cameraId;
             Width = width;

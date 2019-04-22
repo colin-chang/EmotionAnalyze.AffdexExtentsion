@@ -11,10 +11,10 @@ namespace ColinChang.EmotionAnalyze.Sample
     {
         static void Main(string[] args)
         {
-            string _classifierPath = @"C:\Program Files\Affectiva\AffdexSDK\data";
-            int _cameraId = 1;
+            const string classifierPath = @"C:\Program Files\Affectiva\AffdexSDK\data";
+            const int cameraId = 1;
 
-            var detector = new AutoCameraDetector(_classifierPath, _cameraId);
+            var detector = new AutoCameraDetector(classifierPath, cameraId);
             detector.OnImageCapture += Detector_OnImageCapture;
             detector.OnImageResults += Detector_OnImageResults;
             detector.OnProcessingException += Detector_OnProcessingException;

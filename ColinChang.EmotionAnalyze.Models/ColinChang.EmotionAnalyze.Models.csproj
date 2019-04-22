@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -10,10 +10,10 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>Affectiva Extension Emotion EmotionAnalyze</PackageTags>
     <PackageLicenseUrl></PackageLicenseUrl>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReleaseNotes>1.Add a Tag property to save extra data
-2.Set platform as x64</PackageReleaseNotes>
+    <PackageReleaseNotes>1.Add IImageResult interface
+2.Mofify the struct of ImageResult(face property)</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
