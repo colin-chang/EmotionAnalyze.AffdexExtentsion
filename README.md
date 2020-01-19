@@ -24,7 +24,7 @@ dotnet add package ColinChang.EmotionAnalyze.AffdexExtentsion
 
 * Microsoft .NET framework v 4.6.1 or newer
 * Visual C++ Redistributable runtime for VS 2015
-* [Affectiva SKD](https://knowledge.affectiva.com/docs/getting-started-with-the-emotion-sdk-for-windows#section-1-download-and-run-the-sdk-installer) installed
+* [Affectiva SDK](https://knowledge.affectiva.com/docs/getting-started-with-the-emotion-sdk-for-windows#section-1-download-and-run-the-sdk-installer) installed
 * Only x64 OS was supported. 
 
 **Hardware requirements (recommended)**
